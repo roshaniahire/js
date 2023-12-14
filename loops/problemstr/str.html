@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inverted pyramid pattern</title>
+    <style>
+        h3 {
+            color: red;
+        }
+
+        h4 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //a=parseInt(prompt("Enter value a"));
+        //b=parseInt(prompt("Enter value b"));
+        /*
+         *
+        ***  
+       *****
+       ******
+        ****
+         **
+          *
+   
+        */
+        let n;
+        n = parseInt(prompt("Enter the navlue of n"));
+
+
+        for (i = 1; i <= n; i++) {
+            document.write("<h3>");
+            for (k = 1; k <= (n - i); k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (j = 1; j <= i; j++) {
+
+                document.write("*");
+
+            }
+            for (j = 2; j <= i; j++) {
+
+                document.write("*");
+
+            }
+
+            document.write("</h3>");
+        }
+
+        for (i = n - 1; i >= 1; i--) {
+            document.write("<h3>");
+            for (k = 1; k <= (n - i); k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (j = 1; j <= i; j++) {
+
+                document.write("*");
+
+            }
+            for (j = 2; j <= i; j++) {
+
+                document.write("*");
+
+            }
+
+            document.write("</h3>");
+        }
+    </script>
+</body>
+
+</html>
