@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q3: Area of a Triangle
+Write a function that takes the base and height of a triangle and return its area.
+
+Examples
+triArea(3, 2) ➞ 3
+triArea(7, 4) ➞ 14
+triArea(10, 10) ➞ 50
+
+Note: The area of a triangle is: (base * height) / 2 -->
+    <script>
+        function TriArea(){
+
+            // let base=3;
+            // let height=2;
+            let result=((base*height)/2);
+            return result;
+        }
+
+        let base=+prompt("enter base");
+        let height=+prompt("enter height");
+        TriArea();
+        let output=TriArea();
+        document.write(output);
+    </script>
+</body>
+</html>

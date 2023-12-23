@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q5: Power Calculator
+Create a function that takes voltage and current and returns the calculated power.
+
+Examples
+circuitPower(230, 10) ➞ 2300
+circuitPower(110, 3) ➞ 330
+circuitPower(480, 20) ➞ 9600 -->
+    <script>
+        function circuitpower(){
+
+            let result=(current*voltage);
+            return result;
+        }
+
+        let current=+prompt("enter current");
+        let voltage=+prompt("enter voltage");
+        circuitpower();
+        let output=circuitpower();
+        document.write(output);
+    </script>
+</body>
+</html>
